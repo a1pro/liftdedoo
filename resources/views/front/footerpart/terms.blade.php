@@ -1,4 +1,5 @@
 @include('front.include.header')
+die;
 <link rel="stylesheet" href="//code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
 <section class="section cms-banner d-flex align-items-center">
     <div class="overlay"></div>

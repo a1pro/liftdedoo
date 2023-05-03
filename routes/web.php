@@ -98,9 +98,9 @@ Route::get('travel-agency-registration', function () {
 // });
 
 Route::post('checkUserMobile',[BookingRequestController::class,'checkUserMobile'])->name('checkUserMobile');
-    Route::post('verify-otp',[BookingRequestController::class,'verifyOtp'])->name('verifyOtp');
-    Route::post('add-customer-data',[BookingRequestController::class,'addCustomerData'])->name('addCustomerData');
-    Route::post('add-payment-booking',[BookingRequestController::class,'addPayment'])->name('addPayment');
+Route::post('verify-otp',[BookingRequestController::class,'verifyOtp'])->name('verifyOtp');
+Route::post('add-customer-data',[BookingRequestController::class,'addCustomerData'])->name('addCustomerData');
+Route::post('add-payment-booking',[BookingRequestController::class,'addPayment'])->name('addPayment');
 Auth::routes();
 
 
