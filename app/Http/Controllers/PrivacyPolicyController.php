@@ -9,15 +9,17 @@ class PrivacyPolicyController extends Controller
 {
     function index()
     {
+       
         $policy = DriverPolicy::latest()->first();
         return view('front.footerpart.terms',compact('policy'));  
         //return view('front.privacyandpolicyrider',compact('policy'));  
     }
     function edit()
     {
+       
         $policy = DriverPolicy::latest()->first();
-        return view('front.footerpart.terms',compact('policy'));  
-        // return view('app-admin.privacyandpolicyrider',compact('policy'));
+        //return view('front.footerpart.terms',compact('policy'));  
+        return view('app-admin.privacyandpolicyrider',compact('policy'));
     }
     function update(Request $request)
     {
