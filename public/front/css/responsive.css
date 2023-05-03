@@ -1,0 +1,2144 @@
+.driver-availability-dashboard .field input#startDate {
+    margin-left: 15px;
+    width: 30%;
+	border-radius:5px;
+}
+@media only screen and (max-width: 990px) {
+.navbar-toggler-icon::before {
+    content: "\f0c9";
+    font-family: fontawesome;
+	 position: relative;
+    top: 3px;
+}
+header {
+    padding: 5px 0 10px;
+}
+header .col-md-2 {
+    max-width: inherit;
+    width: auto;
+}
+.logo img {
+    max-width: 165px;
+}
+header .header-right {
+    align-items: center;
+    display: inline-block !important;
+    flex: 1 1 auto;
+    margin:10px 0 0;
+    max-width: inherit !important;
+    text-align: right;
+    width: auto !important;
+}
+.header-right .navbar {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    top: 0;
+	width: auto;
+}
+
+#navbarNavDropdown {
+    background: #fff none repeat scroll 0 0;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.15);
+    min-width: 200px;
+    padding: 3px 0 5px;
+    position: absolute;
+    right: -125%;
+    text-align: left;
+    top: 50px;
+    z-index: 9999;
+}
+.section-1 .container {
+    z-index: 0;
+}
+nav.navbar li.nav-item a.nav-link {
+    padding: 10px 15px;
+}
+#navbarNavDropdown::before, #navbarNavDropdown::after {
+    border-bottom: 10px solid #f4f4f4;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    content: "";
+    height: 0;
+    left: 52%;
+    position: absolute;
+    top: -10px;
+    width: 0;
+}
+.user-container .dropdown-menu {
+   top: 10px !important;
+}
+.user-container .dropdown-menu:before, .user-container .dropdown-menu::after{
+border-bottom: 10px solid #f4f4f4;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    content: "";
+    height: 0;
+    right: 7%;
+    position: absolute;
+    top: -10px;
+    width: 0;
+}
+.user-container .dropdown-menu::after {
+    border-bottom-color: #fff;
+    border-width: 8px;
+    right: 8%;
+    top: -8px;
+}
+#navbarNavDropdown::after {
+    border-bottom-color: #fff;
+    border-width: 8px;
+    left: 53%;
+    top: -8px;
+}
+.section-1 .container {
+    padding-top: 2em;
+}
+.banner-section h1 {
+    font-size: 2em;
+}
+.banner-search {
+    height: 50px;
+    width: 90%;
+	top: 1em;
+}
+}
+@media only screen and (max-width: 767px) {
+.wrapper {
+    flex-direction: column;
+    width: 100%;
+}
+.section-1{
+   order:1;
+}
+.section-2{
+   order:3;
+}
+.section-3{
+   order:2;
+}
+.section-4{
+   order:4;
+}
+.section-5{
+   order:5;
+}
+nav.navbar li.nav-item a.nav-link {
+    text-align: left;
+	font-size: 12px;
+    font-weight: 400;
+}
+a.closebtn-menu {
+    position: absolute;
+    top: -5px;
+    right: 5px;
+    color: #000;
+    font-size: 28px;
+}
+div#overclse {
+    background: rgba(0,0,0,0.4);
+    transition: 0.5s;
+}
+button.navbar-btn {
+    background: none;
+    border: none;
+    padding: 0;
+	position: relative;
+    top: 2px;
+}
+.logo-sec {
+    padding-left: 5px;
+}
+
+
+a.login-res {
+    color: #000;
+    font-size: 15px;
+    display: inline-block;
+    text-align: center;
+	margin-top: 5px;
+}
+iframe {
+    width: 100%;
+}
+a.login-res i.fa {
+    font-weight: normal;
+}
+
+.responsive-menu {
+    padding-left: 0;
+}
+.logo-sec {
+    padding-left: 5px;
+	padding-right:0;
+}
+.logo img {
+    margin-top: 5px;
+}
+.banner-search input::-webkit-input-placeholder{
+    font-size: 13px;
+    color: #bbb;
+}
+.banner-search input:-moz-placeholder{
+    font-size: 13px;
+    color: #bbb;
+}
+.banner-search input::-moz-placeholder{
+    font-size: 13px;
+    color: #bbb;
+}
+.banner-search input:-ms-input-placeholder{
+    font-size: 13px;
+    color: #bbb;
+}
+header.header .container-fluid {
+    padding: 0;
+}
+.section-2 .row {
+    padding: 1em 0 0 !important;
+    text-align: center;
+}
+.section-1.banner-section {
+    border-top: 1px solid #eee;
+    padding-bottom: 40px;
+}
+.banner-search1 {
+    width:90%;
+}
+.ind-bg {
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+}
+.banner-content{ display:none;} 
+/*.ind-bg::before {
+    background: url(../images/baloon.png) !important;
+    background-size: 100% 100% !important;
+    background-repeat: no-repeat !important;
+    content: "";
+    width: 98%;
+    height: 30px;
+    position: absolute;
+    top: 12px;
+    left: 1%;
+}*/
+.banner-search1 {
+    background: rgba(255,255,255,0.85);
+}
+.banner-search1 #startSpinnerEnd, .banner-search1 #startSpinner{
+   right:40% !important;
+}
+.ind-bg {
+background: url(../images/banner-bg.jpg);
+  padding-bottom: 5rem; 
+    background-size: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: 20% 0;
+}
+.banner-search {
+    background:none;
+}
+.banner-search input {
+    background: #fff;
+}
+.banner-section h1 {
+    font-size: 2em;
+}
+.section-2 .row {
+    padding: 1em 0 0 !important;
+    text-align: center;
+}
+.section-2 p {
+    font-size: 13px;
+}
+.section-3 h1.title {
+    font-size: 1em;
+}
+.section-3 {
+    padding:1.5em 0 0.5em !important;
+}
+.section-3 .col-4 {
+    flex: 1 1 auto;
+    margin-bottom: 15px;
+    max-width: 100%;
+    width: 100% !important;
+}
+.section-3 .col-4:last-child {
+    margin-bottom: 0;
+}
+.search-page .error-massage {
+    width: 100% !important;
+}
+.section-3 ul li .icon-arrow {
+    font-size: 8px;
+    padding: 0 5px;
+}
+.section-2 h2 {
+    font-size: 1.5em;
+}
+.section-2 h3 {
+    font-size: 18px;
+}
+.section-2 h2 {
+    font-size: 1.3em;
+}
+.contact {
+    padding: 0 15px;
+}
+.right-sidebar {
+    border-left: none;
+}
+.contact .btn.btn-primary {
+    width: 100%;
+}
+.driver-main .wrapper, .driver-main .wrapper{
+    padding: 25px 15px;
+    width: 100%;
+}
+.driver-main .field, .driver-main .field{
+    width: 100%;
+}
+.driver-main .title, .driver-main .title, .title {
+    font-size:1.4em;
+}
+.driver-main .mandatory {
+    font-size: 11px;
+    right: 0;
+    top: -16px;
+}
+.driver-main .field input {
+    height: 40px;
+}
+.driver-main .field {
+    margin: 0 0 0.5rem;
+}
+.driver-main .actions button.btn {
+    width: 100%;
+}
+.driver-main .title {
+    text-align: left !important;
+}
+.cms-body {
+    padding: 0 15px;
+}
+.cms-page .cms-container {
+    padding: 15px;
+}
+.container, .container-sm{ max-width:100%;}
+.cms-body {
+    padding-top: 0 !important;
+}
+.cms-banner h1.title {
+    margin: 1.5em 0 1em;
+}
+.row {
+    margin: 0;
+}
+.left-side {
+    margin-bottom: 2rem !important;
+    padding: 0;
+}
+.contact .btn.btn-primary {
+    width: 90%;
+}
+.right-sidebar li {
+    margin-bottom: 1rem;
+}
+.contact p.txt {
+    padding: 0;
+}
+.remind {
+    margin-left: 0;
+    margin-top: 13px;
+	float:left;
+}
+
+.login-main .title {
+    text-align: left !important;
+}
+.login-main .wrapper {
+    padding:0;
+}
+.login-main .wrapper .tab-content {
+    padding: 30px 0 20px;
+}
+.login-main .wrapper #otp input {
+    margin-bottom: 0;
+}
+.login-main .actions button.btn {
+    width:auto;
+	margin-right: 15px;
+}
+.login-main .actions {
+    text-align: center;
+	display: flex;
+}
+.book-modal .nav a.nav-item {
+    width: 100%;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 1px;
+}
+
+.book-modal .nav a.nav-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+.modal-dialog.modal-dialog-scrollable {
+    width: 90%;
+    margin: 0pc auto;
+}
+.remind {
+    display: block;
+    float: none;
+}
+.dashboard {
+    padding:0.5em 0 0;
+}
+.col-left.sidebar {
+    border: 1px solid #eee;
+    margin-bottom: 1em;
+    padding: 15px;
+    width: 100%;
+}
+.col-left ul {
+    margin: 0;
+}
+.dashboard .col-right{
+    border-left: none;
+    padding:0 1.5rem 0 2rem;
+    width: 100%;
+	margin-top: 0.5em;
+}
+.driver-availability-dashboard .label {
+    width: 100%;
+}
+.driver-availability-dashboard .field input {
+    width: 100%;
+}
+.driver-availability-dashboard .actions {
+    margin: 2em 0 0;
+	clear: both;
+}
+.booking-dashboard .box {
+    margin-top: 1.5em;
+}
+.search-date {
+    width: 100%;
+	    margin-top: 10px;
+}
+
+input:focus {
+    box-shadow: none !important;
+}
+.travel-booking .field {
+    width: 100%;
+}
+.travel-booking .field input.input-text {
+    width: 100%;
+}
+.travel-booking .field.last select {
+    width: 100%;
+}
+.addmore {
+    margin-right: 0;
+    margin-top: 0;
+	float: left;
+	margin-bottom:1em;
+}
+
+.travel-booking.car-info .field {
+    width: 100%;
+	margin-bottom: 15px;
+}
+
+.table-responsive thead th {
+    font-size: 12px;
+    white-space: nowrap;
+}
+
+footer.page-footer {
+    overflow: hidden;
+}
+footer.page-footer .row {
+    padding: 1em 0 0 !important;
+}
+.page-footer .container {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.page-footer .card.first .collapse {
+    display: block;
+    padding: 0 5px;
+}
+.footer-btm {
+    float: left;
+    padding: 10px 5px;
+    text-align: left;
+    width: 100%;
+}
+.social {
+    margin-top: 5px;
+    width: 100%;
+}
+.copyright {
+    font-size: 11px;
+    width: 100%;
+	float: left;
+}
+.book-modal .container {
+    padding: 0;
+}
+.page-footer .col-md-3 ul {
+    padding: 0;
+	margin-bottom:0;
+}
+.footer-logo {
+    margin: 0 0 1rem;
+}
+.page-footer p {
+    font-size: 13px;
+}
+.page-footer .card {
+    display: block !important;
+    max-width: 100% !important;
+    padding: 0;
+    width: 100% !important;
+	border:  none;
+}
+.page-footer .accordion {
+    display: block !important;
+    padding: 0 15px 15px;
+    width: 100%;
+}
+footer.page-footer li a {
+    font-size: 13px;
+}
+.page-footer .card-header {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    padding: 5px;
+	border: medium none;
+}
+.page-footer .card-header .btn {
+    color: #000;
+    padding-left: 0;
+}
+.page-footer .card-header h2 {
+    border-bottom: 1px dotted #000;
+}
+.page-footer .card-header .btn::after {
+    content: "\f068";
+    float: right;
+    font-family: fontawesome;
+}
+.page-footer .card-header .btn.collapsed::after {
+    content: "\f067";
+}
+.page-footer .card-body {
+	padding-left: 5px;
+    padding-bottom: 0px;
+    padding-top: 10px;
+}
+
+.card.first .card-header {
+    display: none;
+}
+.card.first .card-body {
+    padding: 0;
+}
+input, select {
+    font-size: 14px;
+}
+.page-footer .card-header .btn:focus{ box-shadow:none; text-decoration:none;}
+.page-footer .card-header .btn:hover{ text-decoration:none;}
+.banner-search input:focus{ background:#fff !important;}
+.section-2 {
+    padding-top: 1rem !important;
+}
+.col-right .title {
+    font-size:0.8em;
+	    margin-bottom: 0.2rem;
+}
+.col-left .title {
+    font-size: 14px;
+}
+.booknow {
+    padding: 2px 8px;
+}
+.banner-search form {
+    display: block;
+}
+.banner-search .field span.form-select {
+    font-size: 10px !important;
+    margin-top: 2px;
+}
+.search-page .new-append h2 {
+    margin-left: 0 !important;
+    font-size: 18px;
+}
+.modal-inner {
+    display: block !important;
+}
+
+span.user-image img {
+    max-width:90px;
+}
+.img-sec {
+    padding-left: 0;
+}
+#myModal1 .img-sec {
+    padding-left: 0;
+}
+
+.details-sec {
+    padding: 0;
+}
+
+
+#myModal1 .modal-dialog {
+    top: 10%;
+}
+.details {
+    padding-top: 0.7rem;
+}
+
+.details h2.name {
+    font-size:20px;
+}
+.driver-details p {font-size: 12px;margin-bottom: 5px;}
+
+ul.car-info {
+    margin-bottom: 10px;
+}
+.price-btnsec span.price {
+    font-size: 18px;
+}
+.price-btnsec a.booknow {
+    font-size: 13px;
+    padding: 5px 15px;
+}
+.otp-2 input#mobile {
+    width: 100% !important;
+    margin-bottom: 15px !important;
+}
+
+.otp-3 button#send {
+    margin: 0 auto !important;
+    width: 100%;
+}
+
+.otp-3 {
+    padding: 0 15px !important;
+}
+
+.otp label.label {
+    padding-left: 15px;
+}
+.booking-history .input-group.search-date {
+    width: 45%;
+    margin: 0;
+}
+
+.booking-history .input-group-append {
+    width: 100%;
+}
+
+.booking-history .input-group-append form {
+    width: 100%;
+}
+
+.booking-history h1.title {
+    position: relative;
+    top: 5px;
+}
+
+.title-srch {
+    display: flex;
+    flex-direction: column;
+}
+
+.title-srch h1.title {
+    width: 100%;
+}
+
+.title-srch .input-group.search-date {
+    order: -1;
+    width: 100%;
+    margin-top: 0;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.title-srch .input-group.search-date a .btn-secondary {
+    position: absolute;
+    right: 0;
+    bottom: -45px;
+}
+
+.title-srch .input-group.search-date input#search {
+    border: none;
+    padding: 0;
+    width: 100%;
+}
+
+.title-srch .input-group.search-date form {
+    width: 100%;
+}
+
+.title-srch .input-group.search-date .input-group-append {
+    border-bottom: 1px solid #eee;
+	width: 90%;
+    float: right;
+}
+.title-srch .input-group.search-date .input-group-append.w-100{
+    border-bottom:none;
+}
+.title-srch .input-group.search-date  button#search {
+    background: none;
+    border: none;
+    color: #000;
+}
+.booking-history .input-group.search-date {
+    margin-bottom: 10px;
+}
+.alert.alert-success {
+    order: -1;
+	font-size: 13px;
+	padding: 6px 10px 4px;
+}
+
+.booking-en {
+    position: absolute;
+    width: 85px;
+    right: 50%;
+    top: -3px;
+}
+header .header-right {
+    padding-bottom: 7px;
+}
+.header-right .navbar {
+    width: 50px;
+    top: -3px;
+}
+.header.fixed .header-right {
+    top: 7px;
+}
+.header.fixed .booking-en {
+    right: 42%;
+}
+
+.booking-en span {
+    bottom: -2px;
+    right: 10px;
+    font-size: 9px;
+}
+.header.fixed .booking-en span {
+    font-size: 9px;
+}
+.header.fixed .booking-en {
+    width: 75px;
+}
+.header.fixed .booking-en span {
+    right: 8px;
+	    font-size: 8px;
+}
+.header.fixed .user-container {
+    margin-top: -17px;
+}
+.user-container button.btn i.fa::before {
+    content: "\f2c0";
+	left: 3px;
+    position: relative;
+}
+
+.user-container button.btn {
+    background: none !important;
+    border: none;
+    color: #000;
+    padding: 0;
+    top: 9px;
+}
+
+.user-container.show button.btn.dropdown-toggle {
+    color: var(--primary);
+}
+
+.user-container .dropdown-menu {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.user-container button.btn.dropdown-toggle:focus {
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
+
+.over .overlay {
+    background: rgba(0,0,0,0.5);
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    z-index: 9999;
+}
+.srch-box{
+float: left;
+    overflow: hidden;
+    display: none;
+    border: 1px solid #000;
+    box-shadow: none;
+    margin-left: 0px;
+	background: #fff;
+	
+    }
+.srch-box button#search {
+    background: #fff !important;
+    border: none !important;
+}
+    .box-inner{
+        width: 400px;
+        padding: 10px;
+        border: 1px solid #a29415;
+    }
+.fixed-search {
+    position: fixed;
+    left: 1px;
+	top: 21%;
+	width: 75%;
+	
+}
+.over .fixed-search{z-index: 9999;}
+.srch-box .input-group-append {
+    border: none;
+    width: 100% !important;
+}
+.srch-box .input-group-append input#search {
+    padding: 0 30px 0 10px !important;
+    height: auto !important;
+}
+button.slide-toggle.search-btn {
+    float: left;
+	background:var(--primary);
+	border:none;
+	color:#fff;
+	padding:8.5px 10px;
+	font-size:13px;
+}
+
+.login-main .wrapper input.login-btn {
+    height: 40px;
+    width: auto;
+	margin-left:0;
+}
+.login-main .actions button.btn{
+    height: 40px;
+}
+
+#overclose, #overclse {
+    position: fixed;
+    right: 0;
+    height: 100%;
+    z-index: 9999;
+    top: 0;
+}
+
+
+div#searchmodal {
+    margin: 0px 0 0 !important;
+    padding: 0;
+    box-shadow: none;
+}
+
+#searchmodal div#date-picker-example {
+    box-shadow: none;
+}
+div#searchmodal .banner-search .field1 .field {
+    float: none;
+    width: 42%;
+}
+
+div#searchmodal .banner-search .field {
+    margin-right: .5em;
+}
+
+span.exchng-icon {
+    margin-right: 10px;
+}
+
+div#searchmodal .banner-search .field2 .field {
+    width: 43%;
+    margin-right: 2.1em;
+    margin-left: 3px;
+}
+
+div#searchmodal .banner-search .field2 .field.last {
+    margin-right: .5em;
+}
+
+span.field-txt {
+    font-size: 10px;
+    padding: 0;
+}
+
+div#searchmodal .banner-search input {
+    padding: 0 0;
+    font-size: 11px !important;
+	border:none !important;
+    border-bottom:1px solid #ddd !important;
+	height:35px;
+}
+
+div#searchmodal .banner-search button#searchform {
+  margin-top: 20px;
+    font-size: 13px;
+    padding: 5px 40px;
+}
+
+#searchmodal a.closebtn {
+        top: 7px;
+    opacity: 1;
+    z-index: 9;
+    font-size: 18px;
+    height: 20px;
+    width: 20px;
+    line-height: 20px;
+}
+span.exchng-icon i.fa {
+    font-size: 12px;
+}
+
+header.fixed .logo {
+    margin-top: 5px;
+}
+.header.fixed .booking-en {
+    right: 25%;
+    top: -2px;
+}
+
+.view-more-search .row {
+    border: none !important;
+}
+
+div#search-modl.view-more-search {
+    padding: 3px 0 3px;
+}
+
+.view-more-search button.modify-btn {
+    margin-right: 4px;
+    font-size: 15px;
+}
+
+section.dashboard.view-more-bdy {
+    padding-top: 0.5rem;
+}
+
+
+nav.navbar li.nav-item.res-link a.nav-link {
+    font-weight: 600;
+}
+
+nav.navbar li.nav-item.res-link.cancel a.nav-link {
+    color: var(--primary);
+}
+
+nav.navbar li.nav-item a.nav-link::before {
+    content: "\f105";
+    font-family: 'FontAwesome';
+    margin-right: 5px;
+}
+p.mandatory {
+    font-size: 11px;
+    right: 0;
+}
+.book-modal .modal-header .close {
+    top: 8px;
+}
+
+
+
+
+
+.box-add {
+    padding: 0 5px;
+    margin-bottom: 10px;
+}
+
+.frst.box-add .add-sec img {
+    width: 80px;
+    margin-top: 10px;
+}
+
+
+.dash-sec .row {
+    margin: 0 -5px;
+}
+.box-add .add-sec img {
+    width: 60px;
+}
+
+.thrd.box-add .add-sec img {
+    width: 55px;
+}
+
+.frth.box-add .add-sec img {
+    width: 45px;
+}
+
+.box-add .add-sec span.img-sec {
+    min-height: 60px;
+}
+
+.addlink {
+    font-size: 11px;
+}
+
+.box-add .add-sec {
+    padding: 10px 10px;
+}
+.travel-booking .field select.form-select {
+    width: 100%;
+}
+#enquiry-modal .modal-dialog {
+    margin: 1.5em;
+}
+
+#enquiry-modal .modal-dialog p.mandatory {
+    right: 15px;
+}
+.booking-req.res-link {
+    position: absolute;
+    width:80%;
+	right:45%;
+}
+a.enquiry-form {
+    color: #000;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+a.enquiry-form span.pls {
+    color: var(--primary);
+    border: 1px solid var(--primary);
+    width: 15px;
+    height: 15px;
+    line-height: 15px;
+    font-size: 14px;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    margin-right: 4px;
+}
+.desk-link {
+    display: none;
+}
+
+.booking-req.res-link img {
+    width: 100%;
+}
+span.to {
+    margin: 0 33px !important;
+}
+
+.col-right #accordion {
+    margin-top: .8em;
+}
+.section-4 {
+    background-size: 220% 100%;
+    overflow: hidden;
+	    padding: 2rem 0 0.5rem !important;
+}
+.section-4 h1.title {
+    font-size: 1.1em;
+    margin-bottom: 0.4em;
+}
+.attach {
+    padding: 0 20px;
+}
+.attach h2 {
+    font-size: 0.9rem;
+    margin-right: 10px;
+}
+.attach-inr {
+    padding: 10px 10px 0;
+}
+.attach-inr .attach-btn {
+    font-size: 11px;
+    padding: 7px 10px;
+}
+.faq h2.title {
+    display: block;
+    height: auto;
+    font-size: 13px;
+    letter-spacing: 0;
+    line-height: 1.5;
+    font-weight: 600;
+}
+.section-5 h1.title {
+    font-size: 1.1em;
+}
+.cms-page header.fixed, header.fixed{
+   padding:2px 0px 3px;
+}
+#availaberideModal .modal-dialog {
+    max-width: 87%;
+    margin: 20% auto 0;
+}
+
+div#availaberideModal .row {overflow-x: scroll;display: flex;flex-wrap: nowrap;}
+
+div#availaberideModal .row .col-12 {padding: 0 10px; max-width: 95%;}
+
+#availaberideModal .modal-content {
+    display: block;
+    flex: auto;
+    flex-direction: row;
+}
+p.available-message{ width:100%; font-size: 13px; padding: 15px 10px 20px;}
+.dashboard .left-fix-menu {
+    display: none;
+}
+
+.forget div#formContent {
+    padding: 20px 15px 20px;
+    max-width: 100%;
+}
+.forget div#formContent label#mobile-error {
+    top: -15px;
+}
+.search-page .col-right .covid-gide-sec .title {
+    font-size: 16px;
+}
+}
+@media only screen and (max-width: 639px) {
+.booking-en {
+    right: 28%;
+	top: -6px;
+}
+.login-main .alert {
+    font-size: 13px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+.login-main .alert button.close {
+    font-size: 22px;
+}
+.logo img {
+    max-width: 100%;
+    margin-left: -10px;
+	margin-top: 0;
+}
+
+.driver-dashboard .box-content {
+    padding-left: 0rem;
+}
+header .header-right {
+    max-width: none !important;
+    padding-left: 0;
+}
+section.dashboard {
+    margin-bottom: 2em !important;
+	width: 100%;
+}
+.col-left li a {
+    font-size: 12px;
+}
+.btn {
+    font-size: 0.9rem;
+}
+.section-1 h1.title {
+    font-size: 1.1em;
+}
+.banner-search .field{
+    display: inline-block;
+    float: left;
+    margin: 0 7px 5px 0;
+    width: 49%;
+}
+.banner-search input {
+border: 1px solid #ddd !important;
+    border-radius: 0;
+    font-size: 13px;
+    padding: 7px 10px;
+    width: 100%;
+    height: 40px;
+}
+.banner-search .field.last {
+    margin-right: 0;
+}
+.banner-search {
+    background: rgba(255, 255, 255, 0.8) none repeat scroll 0 0;
+    border: none;
+    box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.2);
+    height: auto;
+    padding: 15px;
+    width: 100%;
+}
+.section-3 ul li.book-now-main {
+    padding: 10px 0 15px;
+}
+a.quick-view {
+    display: inline-block;
+    margin-left: 15px;
+}
+
+.covid-gide-sec .container {
+    padding: 0;
+}
+
+.covid-gide-item {
+    border-right: none;
+    border-bottom: 1px solid #fff;
+}
+
+.product-sec .container {
+    padding: 0;
+}
+
+.product-item {
+    padding: 0;
+    margin-bottom: 30px;
+}
+
+.product-item .actions {
+    align-items: center;
+    justify-content: center;
+}
+
+.product-item .details table {
+    width: 100%;
+}
+
+.search {
+    border-radius: 0;
+    margin: 10px 0 0;
+    padding: 8px 0;
+    position: relative;
+    width: auto;
+}
+.banner-search form {
+    width: 100%;
+}
+.section-1 h1.title {
+    font-size: 1em;
+	margin-bottom: 0;
+}
+.section-2 .btn-primary {
+    font-size: 14px;
+}
+.section-3 ul li {
+    font-size: 10px;
+}
+.section-3 ul li img {
+    width: 50px;
+}
+.section-3 ul li::after {
+    top: 9px;
+}
+.section-3 ul li:nth-child(3)::after {
+    right: 6px;
+    top: 13px;
+}
+.section-3 ul li:first-child::after {
+    right: -5px;
+    top: 22px;
+}
+.section-3 ul li:nth-child(4)::after {
+    right: -4px;
+}
+.label, label {
+    font-size: 13px;
+}
+.remind {
+    font-size: 13px;
+}
+.search-page .section-3 ul li {
+    height: auto;
+    padding: 10px 0;
+	border-right: 1px solid #eee;
+}
+.search-page .section-3 ul li.price-sec, .search-page .section-3 ul li.car-name-sec, .search-page .section-3 ul li.book-now-sec {
+    width: 100%;
+}
+.search-page .section-3 ul li.car-name-sec {
+    width: 100%;
+}
+.search-page .section-3 ul li.car-no-sec {
+    padding: 10px 0;
+    width: 100%;
+}
+.search-page .section-3 ul li:first-child {
+    padding: 10px 0;
+}
+.search-page .section-3 ul li.place-sec {
+    width: 100%;
+}
+.search-page .section-3 ul li.img {
+    padding: 10px 0;
+}
+.section-1 .container {
+    padding-top: 1em;
+}
+input, select {
+    font-size: 13px;
+}
+.driver-main .title, .driver-main .title, .title {
+    font-size:1.2em;
+}
+.section-2 p {
+    font-size: 12px;
+}
+.section-2 h3 {
+    font-size: 15px;
+}
+.section-2 h2 {
+    font-size: 1.1em;
+}
+.btn-primary {
+    padding: 0.5rem 1.2rem;
+}
+.section-3 ul li.price-main, .section-3 ul li.car-name {
+    width: 100%;
+}
+.section-3 ul li.car-info-main, .section-3 ul li.book-now-main, .section-3 ul li.frst {
+    width: 100%;
+}
+.section-3 ul {
+    display: block;
+}
+.search-page .section-3 ul li {
+    border: none;
+}
+.search-page .section-3{ padding-top:0 !important;}
+.search-page .section-3 ul {
+    height: auto;
+	border: 1px solid #ddd;
+}
+.search-page .content input {
+    width: 42.5%;
+}
+.search-page .col-right {
+    border: none;
+    padding-left: 0;
+    border-left: none;
+}
+.section-3 ul li {
+    font-size: 12px;
+	padding: 10px 0;
+	height: auto;
+}
+.table button.btn-info, .table button.btn-danger {
+    padding: 0 2px;
+    font-size: 12px;
+}
+.cms-page header.fixed .logo img, header.fixed .logo img {
+    width: 130px;
+}
+.section-3 ul li.frst {
+    padding: 8px 0;
+}
+.col-right .box li {
+    font-size: 12px;
+}
+.section-3 ul li.img {
+    padding: 15px 0;
+}
+
+.driver-availability-dashboard .field {
+    margin: 0 0 10px;
+}
+.label, label {
+    font-size: 12px;
+}
+.driver-availability-dashboard .field input {
+    height: 35px;
+}
+.col-right .box {
+    padding: 15px 10px;
+	margin-top: 10px;
+}
+.driver-availability-dashboard .actions {
+    margin: 1em 0 0;
+}
+.car-info.driver-availability-dashboard .actions {
+    padding: 0 10px;
+}
+.driver-availability-dashboard .field select#start_location {
+    margin-bottom: 10px;
+    width: 100%;
+}
+.driver-availability-dashboard .field input#startDate {
+    margin-left: 0;
+    width: 100%;
+}
+.driver-availability-dashboard .field span.mx-4 {
+    font-size: 12px;
+    margin: 0 5px !important;
+}
+.booking-dashboard td {
+    font-size: 12px;
+}
+.booking-dashboard th {
+    font-size: 12px;
+}
+.form-control {
+    font-size: 12px;
+}
+.search-date .form-control {
+    height: 35px;
+}
+.travel-booking .field .field {
+    width: 35%;
+}
+.search-date form {
+    width: 60%;
+}
+.search-date a .btn-secondary {
+    font-size: 12px;
+    padding: 7px 5px;
+}
+.banner-search .field {
+    width: 49%;
+	margin-right: 5px;
+}
+.banner-search .field.last {
+    margin-right: 0;
+}
+.banner-search input {
+    width: 100%;
+}
+.banner-search #startSpinner {
+    left: 44% !important;
+    top: 22px !important;
+}
+.banner-search #startSpinnerEnd {
+    right: -45% !important;
+    top: 22px !important;
+}
+.search-page .section-3 ul li.even.book-now-sec {
+    padding-top: 3px;
+}
+.search-page .col-left .label{padding: 4px 0px;}
+.search-page .col-left .label {
+    margin-bottom: 0;
+}
+.search-page .col-right {
+    padding: 0 1.3rem;
+}
+.search-page .col-right .title {
+    margin-bottom: 1rem;
+    padding: 0 0 15px;
+}
+.search-page .section-3 .col-12 {
+margin-bottom: 30px;
+padding:0;
+}
+.book-modal .modal-header .close{
+   background: var(--black);
+}
+.search-date a {
+    width: 40%;
+    text-align: right;
+}
+.avilabilty-book .title-srch h1.title {
+    font-size: 13px;
+}
+
+
+
+
+
+
+div#search-modl .field i.fa::before {
+    content: "\f175";
+}
+button.modify-btn {
+    padding: 0 12px;
+    font-size: 12px;
+    border-radius:3px;
+    height: 27px;
+}
+div#search-modl {
+    padding: 15px 0 15px;
+    font-size: 11px;
+    font-weight: 400;
+}
+div#search-modl .field {
+    width: 45%;
+    text-align: center;
+    padding: 5px 0;
+	margin-right: 0.5em;
+}
+
+div#search-modl .field.date {
+    width: 25%;
+}
+
+div#search-modl .field span {
+    clear: both;
+}
+
+div#search-modl .field i.fa {
+    clear: both;
+    display: block;
+}
+
+div#search-modl .row {
+    align-items: center;
+    width: 100%;
+    border: 1px solid #eee;
+    padding: 0 0;
+}
+.logo img {
+    margin-top: -3px;
+}
+.login-main .wrapper ul.nav-tabs a.nav-link {
+	padding: 0.5rem 1rem;
+}
+}
+
+@media only screen and (min-width: 320px) and (max-width: 375px) {
+
+#leftmenu h2.title {
+    font-size: 12px;
+    padding-left: 10px;
+}
+#leftmenu.overlay .closebtn {
+    font-size: 28px;
+}
+.header.fixed .booking-en {
+    right: 27%;
+}
+.search-date a .btn-secondary {
+    font-size: 9px;
+}
+.title-srch h1.title {
+    font-size: 12px;
+	    margin-top: 0;
+}
+.col-right .box li {
+    font-size: 11px;
+}
+.title-srch .input-group.search-date a .btn-secondary {
+    bottom: -40px;
+}
+.search-travel a button.btn.btn-secondary {
+    font-size: 9px;
+}
+
+.search-travel h1.title {
+    font-size: 13px;
+}
+.travel-booking .field .field {
+    width: 30%;
+}
+
+.avilabilty-book .search-date a .btn-secondary {
+    font-size: 9px;
+}
+.avilabilty-book .title-srch h1.title {
+    font-size: 11px;
+}
+.booking-en {
+    right: 35%;
+	width: 70px;
+	top: -2px;
+}
+.header-right .navbar {
+    top: -4px;
+    width: 40px;
+    right: 8px;
+}
+#navbarNavDropdown {
+    right: -185%;
+}
+
+.fixed-search {
+	width: 100%;
+	
+}
+.over .title-srch .input-group.search-date .input-group-append input#search {
+    padding-right: 10px !important;
+}
+.booking-en span {
+    right: 2px;
+}
+
+div#searchmodal .banner-search .field1 .field {
+    width: 41%;
+}
+div#searchmodal .banner-search .field2 .field {
+    width: 41%;
+}
+
+div#searchmodal .banner-search input {
+    font-size: 10px;
+}
+
+div#searchmodal.view-more-modal .banner-search .field1 .field {
+    width: 42%;
+}
+div#searchmodal.view-more-modal .banner-search .field2 .field {
+    width: 42.5%;
+}
+span.to {
+    margin: 0 40px !important;
+}
+.login-main .wrapper ul.nav-tabs a.nav-link {
+	padding: 0.5rem 0.5rem;
+	font-size:11px;
+}
+}
+@media only screen and (min-width: 320px) and (max-width: 359px) {
+header .header-right {
+    margin: 6px 0 0;
+}
+.navbar-toggler-icon::before {
+    top: 4px;
+}
+.cms-page header.fixed .logo img, header.fixed .logo img{
+    margin-top:2px;
+    width: 110px;
+}
+.booking-req.res-link {
+    width: 80%;
+    right: 55%;
+    top: 1px;
+}
+a.enquiry-form {
+    font-size: 10px;
+}
+a.enquiry-form span.pls {
+    width: 13px;
+    height: 13px;
+    line-height: 13px;
+    font-size: 11px;
+}
+div#searchmodal.view-more-modal .banner-search .field1 .field {
+    width: 41%;
+}
+div#searchmodal.view-more-modal .banner-search .field2 .field {
+    width: 41.5%;
+}
+#myModal-172 .modal-dialog.modal-dialog-scrollable {
+    top: 13%;
+}
+.header.fixed .booking-en {
+    right: 35%;
+}
+.book-modal .nav a.nav-item {
+    padding: 5px 0;
+    font-size: 13px;
+}
+
+div#sentSuccessOTPVerified-172 {
+    font-size: 10px;
+}
+
+.booking-form input {
+    height: 30px;
+    margin-bottom: 8px;
+}
+
+.booking-form .form-check a, .booking-form span {
+    font-size: 11px;
+}
+.booking-form button.search {
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+.left-fix-menu {
+    top: 34%;
+}
+.title-srch h1.title {
+    font-size: 10px;
+}
+.driver-dashboard .booknow {
+    font-size: 11px;
+}
+.driver-dashboard .col-right h1.title {
+    top: 4px;
+    position: relative;
+    font-size: 10px;
+}
+.header-right .navbar {
+    right: 0px;
+}
+.booking-en {
+    right: 50%;
+    width: 75px;
+    top: -4px;
+}
+.booking-en span {
+    right: 4px;
+}
+span.to {
+    margin: 0 30px !important;
+}
+
+.driver-main .title{
+    font-size:1em;
+}
+}
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+button.search {
+    padding: 0.7rem 1.3rem;
+}
+
+}
+
+@media only screen and (min-width: 640px) and (max-width: 767px) {
+.banner-search .field{
+     width: 24%;
+}
+.section-3 ul li {
+    font-size: 13px;
+}
+.section-3 ul li::after {
+    top: 11px;
+}
+.section-3 ul li:first-child::after {
+    top: 27px;
+}
+
+.banner-search input {
+    font-size: 12px;
+}
+.banner-search form {
+    width: 81%;
+}
+.login-main .wrapper .btn {
+    padding: 10px 40px;
+}
+.btn-primary {
+    padding: 0.7rem 1.9rem;
+}
+input, select {
+    font-size: 14px;
+}
+.section-3 ul li.frst {
+    padding: 2px 0;
+}
+.page-footer .col-md-3 {
+    max-width: 30%;
+    padding: 0;
+}
+.page-footer .col-md-3:nth-child(2) {
+    max-width: 20%;
+    width: 20%;
+}
+.page-footer .col-md-3:nth-child(1) {
+    margin-right: 5%;
+    max-width: inherit;
+    padding: 0 !important;
+    width: 20%;
+}
+.page-footer .col-md-3:nth-child(4) {
+    width: 25%;
+}footer.page-footer li a {
+    font-size: 12px;
+}
+
+}
+@media only screen and (min-width: 600px) and (max-width: 767px) {
+.section-3 ul li span.place span .fa-long-arrow-right::before{content: "\f175";}
+.section-3 ul li.car-info-main {
+    padding: 0.9rem 0;
+}
+.section-3 ul li.frst {
+    padding: 15px 0;
+}
+.section-3 ul li.frst span {
+    clear: both;
+    width: 100%;
+    display: block;
+}
+.section-3 ul li {
+    font-size: 11px;
+}
+.section-3 ul li.frst {
+    width: 30%;
+}
+.section-3 ul li.price-main {
+    width: 13%;
+}
+.navbar-toggler-icon::before {
+    top: 10px;
+}
+.booking-req.res-link {
+    right: 35%;
+}
+
+.banner-search form {
+    display: flex;
+    margin-bottom: 15px;
+}
+div#searchmodal .banner-search .field1 {
+    width: 66%;
+}
+div#searchmodal .banner-search .field1 .field {
+    width: 38%;
+}
+div#searchmodal .banner-search .field2 {
+    width: 33%;
+}
+div#searchmodal .banner-search .field2 .field {
+    width: 80%;
+    margin-right: 2.1em;
+    margin-left: 3px;
+}
+div#searchmodal .banner-search button#searchform {
+    margin-top: 20px;
+    font-size: 13px;
+    padding: 5px 20px;
+    margin-right: 50px;
+}
+
+.product-item {
+    max-width: 48%;
+    padding: 0;
+}
+
+.product-item:nth-child(2n+2) {
+    margin-left: 4%;
+}
+
+.covid-gide-item {
+    max-width: 33.3%;
+}
+.search-page .section-3 li {
+    font-size: 11px;
+}
+
+.search-page .section-3 ul li.price-sec, .search-page .section-3 ul li.car-name-sec, .search-page .section-3 ul li.book-now-sec {
+    width: 10%;
+}
+.search-page .section-3 ul li.car-name-sec {
+    width: 16%;
+}
+.search-page .section-3 ul li.place-sec {
+    width: 31%;
+    padding: 10px 0;
+}
+.search-page .section-3 ul li.book-now-sec {
+    width: 15%;
+}
+.product-item button.btn {
+   padding: 10px 12px;
+}
+.product-item .actions {
+    justify-content: center;
+}
+.product-item .details td {
+    font-size: 12px;
+}
+.product-item .details table{ width:100%;}
+.search-page .col-right .product-item h2.title {
+    font-size: 16px;
+}
+}
+@media only screen and (min-width: 768px) and (max-width: 979px) {
+
+header .col-md-2 {
+    flex: 1 1 auto;
+    max-width: 50%;
+    width: 50%;
+}
+header .header-right {
+    max-width: 50%;
+    width: 50% !important;
+}
+.section-2 h3 {
+    font-size: 16px;
+}
+.section-1 h1.title {
+    font-size: 1.3em;
+}
+.search {
+    font-size: 12px;
+    padding: 0 15px;
+}
+.banner-search input {
+    font-size: 12px;
+}
+.banner-search .field {
+    width: 24.4%;
+}
+.section-2 h2 {
+    font-size: 1.1rem;
+}
+.section-3 ul li {
+    font-size: 12px;
+}
+.section-3 ul li::after {
+    top: 10px;
+}
+.page-footer .row {
+    margin: 0;
+}
+footer.page-footer li a {
+    font-size: 12px;
+}
+.page-footer .card {
+    padding: 0;
+}
+.page-footer {
+    overflow: hidden;
+}
+.copyright {
+    font-size: 11px;
+}
+
+
+div#searchmodal .banner-search .field1 .field {
+    width: 36.6%;
+}
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+.forget .col-lg-8 {
+    max-width: 70%;
+}
+
+.forget .col-lg-4.otp-3 {
+    max-width: 30%;
+}
+
+.forget .col-lg-4.otp-3 button#send {
+    margin: 0 !important;
+}
+.header .container {
+    max-width: 100%;
+}
+
+.header nav li.nav-item {width: auto;clear: none;}
+
+
+
+.header nav ul.navbar-nav {
+    flex-direction: row;
+}
+
+.header-right .navbar {
+    width: 100%;
+    margin-left: -15px;
+}
+
+header .header-right {
+    width: auto !important;
+    display: flex !important;
+    max-width: 80% !important;
+    flex: 0 0 75%;
+    margin-top: 0;
+}
+
+.booking-en {
+    right: 15px;
+}
+
+nav.navbar li.nav-item a.nav-link {
+    padding: 5px 15px;
+    font-size: 12px;
+}
+
+.logo-sec {
+    max-width: 20%;
+}
+
+.nav-bdy {
+    width: 100%;
+}
+
+.cms-page .header {
+    padding: 10px 0 5px;
+}
+
+.booking-en img {
+    max-width: 130px;
+}
+
+.booking-en span {
+    right: 5px;
+}
+
+.user-container {
+    margin-top: -2px;
+}
+
+.logo {
+    margin-top: 0px;
+}
+
+.cms-page header.fixed, header.fixed {
+    padding: 6px 0 5px;
+}
+
+.header.fixed .booking-en {
+    right: 15px;
+}
+
+header.fixed .header-right .navbar {
+    margin-left: -8px;
+    margin-top: 8px;
+}
+
+.header.fixed .booking-en img {
+    max-width: 106px;
+}
+
+.header.fixed .user-container {
+    margin-top: 6px;
+}
+
+.section-2 h3 {
+    font-size: 15px;
+}
+.cms-banner h1.title {
+    max-width: 720px;
+    margin: 30px auto 0;
+    text-align: left !important;
+    width: 100%;
+    display: block;
+}
+
+.banner-content p {
+    line-height: 24px;
+    font-size: 13px;
+}
+.banner-search1 {
+    width: 100%;
+}
+
+.banner-content h1.title {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+.product-item {
+    max-width: 48%;
+    flex: 0 0 50%;
+    padding: 0;
+}
+
+.product-item:nth-child(2n+2) {
+    padding-right: 0;
+    margin-left: 4%;
+}
+
+.search-page .section-3 li {
+    font-size: 11px;
+}
+
+.search-page .section-3 ul li.price-sec, .search-page .section-3 ul li.car-name-sec, .search-page .section-3 ul li.book-now-sec {
+    width: 10%;
+}
+.search-page .section-3 ul li.car-name-sec {
+    width: 16%;
+}
+.search-page .section-3 ul li.place-sec {
+    width: 31%;
+    padding: 10px 0;
+}
+.search-page .section-3 ul li.book-now-sec {
+    width: 15%;
+}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 800px) {
+nav.navbar li.nav-item a.nav-link {
+    padding: 5px 5px;
+}
+.cms-page header.fixed .logo img, header.fixed .logo img {
+    width: 125px;
+    margin-top: 2px;
+}
+}
+@media only screen and (min-width: 801px) and (max-width: 850px) {
+nav.navbar li.nav-item a.nav-link {
+    padding: 5px 10px;
+}
+.header.fixed nav.navbar li.nav-item a.nav-link {
+    font-size: 12px;
+}
+
+header.fixed .header-right .navbar {
+    margin-left: 8px;
+    margin-top: 12px;
+}
+}
+@media only screen and (min-width: 980px) and (max-width: 1023px) {
+.copyright {
+    float: left;
+}
+.footer-btm {
+    float: left;
+    width: 100%;
+}
+.page-footer ul {
+    padding: 0;
+}
+footer.page-footer li a {
+    font-size: 14px;
+    padding: 0;
+}
+.banner-search form {
+    width: 83%;
+}
+.banner-search .field {
+    width: 24%;
+}
+div#searchmodal .banner-search .field1 .field {
+    width: 36.6%;
+}
+}
+@media only screen and (min-width: 1000px) and (max-width: 1023px) {
+header.fixed .header-right .navbar {
+    margin-top: 0;
+}
+}
+@media only screen and (min-width: 1024px) and (max-width: 1279px) {
+.banner-search form {
+    width: 86%;
+}
+.banner-search .field {
+    width: 24.4%;
+}
+
+nav.navbar li.nav-item a.nav-link {
+    padding: 7px 10px;
+    font-size: 13px;
+}
+
+nav.navbar {
+    margin-left: -10px;
+}
+
+.header-right {
+    margin-top: 15px;
+}
+
+.booking-en {
+    right: 25px;
+    margin-top: -8px;
+}
+.cms-page header.fixed, header.fixed {
+    padding: 10px 0px 5px;
+}
+
+.header.fixed .booking-en {
+    margin-top: 5px;
+}
+
+.header.fixed .user-container {
+    margin-top: 7px;
+}
+
+.header.fixed nav#navmain {
+    margin-left: -35px;
+}
+}
+@media only screen and (min-width: 1400px) {
+.header .container-fluid {
+    max-width: 1200px;
+}
+}
