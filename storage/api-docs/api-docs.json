@@ -1,0 +1,992 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "APIs For Thrift Store",
+        "version": "1.0.0"
+    },
+    "paths": {
+        "/api/v1/customer/bookdriver": {
+            "post": {
+                "tags": [
+                    "customer"
+                ],
+                "summary": "List of Available Drivers",
+                "description": "Returns list of available driver near 30km",
+                "operationId": "eea2f9aba0bca8319fdd11a6bed4368f",
+                "parameters": [
+                    {
+                        "name": "booking_availability_id",
+                        "in": "query",
+                        "description": "Provide booking availability id",
+                        "required": true
+                    },
+                    {
+                        "name": "customer_mobile_number",
+                        "in": "query",
+                        "description": "Provide Customer Mobile Number",
+                        "required": true
+                    },
+                    {
+                        "name": "start_location_latlng",
+                        "in": "query",
+                        "description": "Provide Start Location latlng",
+                        "required": true
+                    },
+                    {
+                        "name": "end_location_latlng",
+                        "in": "query",
+                        "description": "Provide End location",
+                        "required": true
+                    },
+                    {
+                        "name": "payment_option",
+                        "in": "query",
+                        "description": "Provide Payment Option",
+                        "required": false
+                    },
+                    {
+                        "name": "payment_amount",
+                        "in": "query",
+                        "description": "Provide Payment Amount",
+                        "required": false
+                    },
+                    {
+                        "name": "price",
+                        "in": "query",
+                        "description": "Provide Price",
+                        "required": false
+                    },
+                    {
+                        "name": "distance_in_km",
+                        "in": "query",
+                        "description": "Provide Distance in km",
+                        "required": true
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "403": {
+                        "description": "Forbidden"
+                    }
+                }
+            }
+        },
+        "/api/v1/driver/addmyavailability": {
+            "post": {
+                "tags": [
+                    "driver"
+                ],
+                "summary": "Add Driver Booking Availability",
+                "description": "Returns list of available driver near 30km",
+                "operationId": "218e8519aa54f7655138e8b93968badb",
+                "parameters": [
+                    {
+                        "name": "driver_mobile_number",
+                        "in": "query",
+                        "description": "Provide Driver Mobile Number",
+                        "required": true
+                    },
+                    {
+                        "name": "pickup_location",
+                        "in": "query",
+                        "description": "Provide pickup Location",
+                        "required": true
+                    },
+                    {
+                        "name": "drop_location",
+                        "in": "query",
+                        "description": "Provide drop Location",
+                        "required": true
+                    },
+                    {
+                        "name": "pickuplatlng",
+                        "in": "query",
+                        "description": "Provide pickup LatLng",
+                        "required": true
+                    },
+                    {
+                        "name": "droplatlng",
+                        "in": "query",
+                        "description": "Provide drop LatLng",
+                        "required": true
+                    },
+                    {
+                        "name": "vehicle_id",
+                        "in": "query",
+                        "description": "Provide Vehicle Id",
+                        "required": true
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "403": {
+                        "description": "Forbidden"
+                    }
+                }
+            }
+        },
+        "/api/v1/driver/changeonlinestatus": {
+            "post": {
+                "tags": [
+                    "driver"
+                ],
+                "summary": "List of Available Drivers",
+                "description": "Returns list of available driver near 30km",
+                "operationId": "e78db549c7b20eaf7e9621bc7fe9e63c",
+                "parameters": [
+                    {
+                        "name": "driver_mobile_number",
+                        "in": "query",
+                        "description": "Provide Driver Mobile Number",
+                        "required": true
+                    },
+                    {
+                        "name": "bookingavailablity_id",
+                        "in": "query",
+                        "description": "Provide Booking Availability id",
+                        "required": true
+                    },
+                    {
+                        "name": "status",
+                        "in": "query",
+                        "description": "Provide status ( 1 for online 0 for offline )",
+                        "required": true
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "403": {
+                        "description": "Forbidden"
+                    }
+                }
+            }
+        },
+        "/api/v1/registerdevice": {
+            "post": {
+                "summary": "Vehicle Registration",
+                "description": "This will register driver",
+                "operationId": "9db27282f5cb392d61e09edc7b53b228",
+                "parameters": [
+                    {
+                        "name": "mobile_number",
+                        "in": "query",
+                        "description": "provide Mobile Number",
+                        "required": true
+                    },
+                    {
+                        "name": "device_firebase_token",
+                        "in": "query",
+                        "description": "Provide Vehicle Type Id",
+                        "required": true
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "403": {
+                        "description": "Forbidden"
+                    }
+                }
+            }
+        },
+        "/api/v1/driver/registerdriver": {
+            "post": {
+                "tags": [
+                    "driver"
+                ],
+                "summary": "Driver Registration",
+                "description": "This will register driver",
+                "operationId": "66f071b88119adc876b6cb4382f73cdc",
+                "parameters": [
+                    {
+                        "name": "driver_name",
+                        "in": "query",
+                        "description": "provide driver name",
+                        "required": true
+                    },
+                    {
+                        "name": "mobile_number",
+                        "in": "query",
+                        "description": "provide Mobile Number",
+                        "required": true
+                    },
+                    {
+                        "name": "driving_license_number",
+                        "in": "query",
+                        "description": "Provide Driving license Number",
+                        "required": true
+                    },
+                    {
+                        "name": "state",
+                        "in": "query",
+                        "description": "Provide state",
+                        "required": true
+                    },
+                    {
+                        "name": "city",
+                        "in": "query",
+                        "description": "Provide city",
+                        "required": true
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "403": {
+                        "description": "Forbidden"
+                    }
+                }
+            }
+        },
+        "/api/v1/driver/addvehicle": {
+            "post": {
+                "tags": [
+                    "driver"
+                ],
+                "summary": "Vehicle Registration",
+                "description": "This will register driver",
+                "operationId": "6b30a76b2a2721d62e7fbf7f12d020da",
+                "parameters": [
+                    {
+                        "name": "driver_mobile_number",
+                        "in": "query",
+                        "description": "provide Driver Mobile Number",
+                        "required": true
+                    },
+                    {
+                        "name": "vehicle_type_id",
+                        "in": "query",
+                        "description": "Provide Vehicle Type Id",
+                        "required": true
+                    },
+                    {
+                        "name": "vehicle_registration_number",
+                        "in": "query",
+                        "description": "Provide Vehicle Registration Number",
+                        "required": true
+                    }
+                ],
+                "requestBody": {
+                    "required": true,
+                    "content": {
+                        "multipart/form-data": {
+                            "schema": {
+                                "required": [
+                                    "file"
+                                ],
+                                "properties": {
+                                    "rc_doc": {
+                                        "description": "file to upload",
+                                        "type": "file"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "403": {
+                        "description": "Forbidden"
+                    }
+                }
+            }
+        },
+        "/api/v1/driver/updatevehicle": {
+            "post": {
+                "tags": [
+                    "driver"
+                ],
+                "summary": "Vehicle Registration",
+                "description": "This will register driver dnt send value which dnt need to be changed",
+                "operationId": "46af6f294185fd51dac0b94bd0888ba2",
+                "parameters": [
+                    {
+                        "name": "driver_mobile_number",
+                        "in": "query",
+                        "description": "provide Driver Mobile Number",
+                        "required": true
+                    },
+                    {
+                        "name": "vehicle_id",
+                        "in": "query",
+                        "description": "provide vehicle id to be edited",
+                        "required": true
+                    },
+                    {
+                        "name": "vehicle_type_id",
+                        "in": "query",
+                        "description": "Provide Vehicle Type Id"
+                    },
+                    {
+                        "name": "vehicle_registration_number",
+                        "in": "query",
+                        "description": "Provide Vehicle Registration Number"
+                    }
+                ],
+                "requestBody": {
+                    "required": true,
+                    "content": {
+                        "multipart/form-data": {
+                            "schema": {
+                                "properties": {
+                                    "rc_doc": {
+                                        "description": "file to upload",
+                                        "type": "file"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "403": {
+                        "description": "Forbidden"
+                    }
+                }
+            }
+        },
+        "/api/v1/driver/deletevehicle": {
+            "post": {
+                "tags": [
+                    "driver"
+                ],
+                "summary": "Vehicle Deletion",
+                "description": "This will register driver",
+                "operationId": "31d25502c9563915fba2565e0245e1ac",
+                "parameters": [
+                    {
+                        "name": "driver_mobile_number",
+                        "in": "query",
+                        "description": "provide Driver Mobile Number",
+                        "required": true
+                    },
+                    {
+                        "name": "vehicle_id",
+                        "in": "query",
+                        "description": "provide Driver Mobile Number",
+                        "required": true
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "403": {
+                        "description": "Forbidden"
+                    }
+                }
+            }
+        },
+        "/api/v1/driver/uploadlicense": {
+            "post": {
+                "tags": [
+                    "driver"
+                ],
+                "summary": "Vehicle Registration",
+                "description": "This will register driver",
+                "operationId": "b7a0a779127afc4c44850a3c5aca5262",
+                "parameters": [
+                    {
+                        "name": "driver_mobile_number",
+                        "in": "query",
+                        "description": "provide Driver Mobile Number",
+                        "required": true
+                    }
+                ],
+                "requestBody": {
+                    "required": true,
+                    "content": {
+                        "multipart/form-data": {
+                            "schema": {
+                                "required": [
+                                    "file"
+                                ],
+                                "properties": {
+                                    "license_doc": {
+                                        "description": "file to upload",
+                                        "type": "file"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "403": {
+                        "description": "Forbidden"
+                    }
+                }
+            }
+        },
+        "/api/v1/driver/updateprofilephoto": {
+            "post": {
+                "tags": [
+                    "driver"
+                ],
+                "summary": "Upload profile Picture",
+                "description": "This will register driver",
+                "operationId": "ddd9d19d56fff5c3bf62151f3b242aa4",
+                "parameters": [
+                    {
+                        "name": "driver_mobile_number",
+                        "in": "query",
+                        "description": "provide Driver Mobile Number",
+                        "required": true
+                    }
+                ],
+                "requestBody": {
+                    "required": true,
+                    "content": {
+                        "multipart/form-data": {
+                            "schema": {
+                                "required": [
+                                    "file"
+                                ],
+                                "properties": {
+                                    "profile_photo": {
+                                        "description": "file to upload",
+                                        "type": "file"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "403": {
+                        "description": "Forbidden"
+                    }
+                }
+            }
+        },
+        "/api/v1/driver/myinfo": {
+            "get": {
+                "tags": [
+                    "driver"
+                ],
+                "summary": "Driver Info",
+                "description": "This will display driver's registered vehicles",
+                "operationId": "08fc7d40b2e4e54c7fedb5863a608cfd",
+                "parameters": [
+                    {
+                        "name": "user_id",
+                        "in": "query",
+                        "description": "provide Driver user_id (not driver id)",
+                        "required": true
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "403": {
+                        "description": "Forbidden"
+                    }
+                }
+            }
+        },
+        "/api/v1/driver/myvehicles": {
+            "post": {
+                "tags": [
+                    "driver"
+                ],
+                "summary": "Vehicle List",
+                "description": "This will display driver's registered vehicles",
+                "operationId": "9063a3cd4189c15e6b17ab9e86049eae",
+                "parameters": [
+                    {
+                        "name": "driver_mobile_number",
+                        "in": "query",
+                        "description": "provide Driver Mobile Number",
+                        "required": true
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "403": {
+                        "description": "Forbidden"
+                    }
+                }
+            }
+        },
+        "/api/v1/customer/myrides": {
+            "post": {
+                "tags": [
+                    "customer"
+                ],
+                "summary": "List of Available Drivers",
+                "description": "Returns list of available driver near 30km",
+                "operationId": "424251c746fcef2d7cabdeca911df9c2",
+                "parameters": [
+                    {
+                        "name": "customer_mobile_number",
+                        "in": "query",
+                        "description": "Provide Customer Mobile Number",
+                        "required": true
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "403": {
+                        "description": "Forbidden"
+                    }
+                }
+            }
+        },
+        "/api/v1/driver/myrides": {
+            "post": {
+                "tags": [
+                    "driver"
+                ],
+                "summary": "List of Available Drivers",
+                "description": "Returns list of available driver near 30km",
+                "operationId": "16835ce1a68a350e421b1e027c63ef43",
+                "parameters": [
+                    {
+                        "name": "driver_mobile_number",
+                        "in": "query",
+                        "description": "Provide Driver Mobile Number",
+                        "required": true
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "403": {
+                        "description": "Forbidden"
+                    }
+                }
+            }
+        },
+        "/api/v1/locations": {
+            "get": {
+                "summary": "Location List",
+                "description": "Returns list of Locations",
+                "operationId": "f0930f0f1bc8a722c85bcdc205197f3f",
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "403": {
+                        "description": "Forbidden"
+                    }
+                }
+            }
+        },
+        "/api/v1/customer/searchdriver": {
+            "post": {
+                "tags": [
+                    "customer"
+                ],
+                "summary": "Search Available Drivers",
+                "description": "This will register driver",
+                "operationId": "30ca376dfe464f8b5ceb98c165e3b4bc",
+                "parameters": [
+                    {
+                        "name": "pickuplatlng",
+                        "in": "query",
+                        "description": "provide pickup latlng",
+                        "required": true
+                    },
+                    {
+                        "name": "droplatlng",
+                        "in": "query",
+                        "description": "provide drop latlng",
+                        "required": true
+                    },
+                    {
+                        "name": "pickup_location",
+                        "in": "query",
+                        "description": "Provide pickup location",
+                        "required": true
+                    },
+                    {
+                        "name": "drop_location",
+                        "in": "query",
+                        "description": "Provide drop location",
+                        "required": true
+                    },
+                    {
+                        "name": "phone",
+                        "in": "query",
+                        "description": "Provide Phone Number",
+                        "required": true
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "403": {
+                        "description": "Forbidden"
+                    }
+                }
+            }
+        },
+        "/api/v1/users": {
+            "get": {
+                "summary": "Users List",
+                "description": "Returns list of projects",
+                "operationId": "3ccff1589b184950d95f7a15e986cf1b",
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "403": {
+                        "description": "Forbidden"
+                    }
+                }
+            }
+        },
+        "/api/v1/customer/registercustomer": {
+            "post": {
+                "tags": [
+                    "customer"
+                ],
+                "summary": "Customer Registration",
+                "description": "Register the Customer",
+                "operationId": "89c5dfb257b53b3b890e204c9c2e3440",
+                "parameters": [
+                    {
+                        "name": "email",
+                        "in": "query",
+                        "description": "provide email address",
+                        "required": false
+                    },
+                    {
+                        "name": "mobile",
+                        "in": "query",
+                        "description": "provide Mobile Number",
+                        "required": true
+                    },
+                    {
+                        "name": "otp",
+                        "in": "query",
+                        "description": "Provide Otp",
+                        "required": true
+                    }
+                ],
+                "responses": {
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "403": {
+                        "description": "Forbidden"
+                    }
+                }
+            }
+        },
+        "/api/v1/registerphone": {
+            "post": {
+                "summary": "Register Mobile Number",
+                "description": "Mobile number registration",
+                "operationId": "dce3283a83d1551bf6c7ca3b30b68dbc",
+                "parameters": [
+                    {
+                        "name": "mobile",
+                        "in": "query",
+                        "description": "provide Mobile Number",
+                        "required": true
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "403": {
+                        "description": "Forbidden"
+                    }
+                }
+            }
+        },
+        "/api/v1/otpverification": {
+            "post": {
+                "summary": "Verify Otp Code",
+                "description": "Verify Otp Code",
+                "operationId": "01f2c8deab3d30ba904820a47d55c7e4",
+                "parameters": [
+                    {
+                        "name": "mobile",
+                        "in": "query",
+                        "description": "provide Mobile Number",
+                        "required": true
+                    },
+                    {
+                        "name": "otp_code",
+                        "in": "query",
+                        "description": "provide otp Code",
+                        "required": true
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "403": {
+                        "description": "Forbidden"
+                    }
+                }
+            }
+        },
+        "/api/v1/getuserdetail": {
+            "post": {
+                "summary": "Get details",
+                "description": "get user detail",
+                "operationId": "94269787d10c77e1d84af24500f76577",
+                "parameters": [
+                    {
+                        "name": "mobile",
+                        "in": "query",
+                        "description": "provide Mobile Number",
+                        "required": true
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "403": {
+                        "description": "Forbidden"
+                    }
+                }
+            }
+        },
+        "/api/v1/vehicletypes": {
+            "get": {
+                "summary": "Vehicle Type List",
+                "description": "This will return vehicle types",
+                "operationId": "da58e402aafe549c8e81bf96151fa604",
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "403": {
+                        "description": "Forbidden"
+                    }
+                }
+            }
+        }
+    },
+    "components": {
+        "securitySchemes": {
+            "bearerAuth": {
+                "type": "http",
+                "name": "bearerAuth",
+                "in": "header",
+                "bearerFormat": "JWT",
+                "scheme": "bearer"
+            },
+            "passport": {
+                "type": "apiKey",
+                "description": "Laravel passport oauth2 security.",
+                "in": "header",
+                "scheme": "https",
+                "flows": {
+                    "password": {
+                        "authorizationUrl": "http://localhost/oauth/authorize",
+                        "tokenUrl": "http://localhost/oauth/token",
+                        "refreshUrl": "http://localhost/token/refresh",
+                        "scopes": []
+                    }
+                }
+            }
+        }
+    }
+}
